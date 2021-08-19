@@ -20,13 +20,19 @@ function App() {
 
 	const [maxMargin, setMaxMargin] = useState(0);
 	const [maxQuota, setMaxQuota] = useState(0);
+	const [priceDifference, setPriceDifference] = useState(0);
+	const [differencePerct, setDifferencePerct] = useState(0);
+	const [unrealizedPNL, setUnrealizedPNL] = useState(0);
 
 	useEffect(() => {
 		let movePerct = data.entryPrice / 100;
 
 		let difference = Math.abs(data.entryPrice - data.stopLoss);
+		setPriceDifference(difference);
 		let differencePerct = difference / movePerct;
+		setDifferencePerct(differencePerct);
 		let unrealizedPNL = differencePerct * data.leverage; // in percentage e.g. 750%
+		setUnrealizedPNL(unrealizedPNL);
 		let maxMargin = data.maxLoss / (unrealizedPNL / 100);
 		if (
 			data.leverage !== "" &&
@@ -59,7 +65,7 @@ function App() {
 						type='number'
 						className='calculator__input'
 						addonBefore='Wallet Size'
-						placeholder='Your total wallet size'
+						placeholder='Your total wallet size e.g. 100(USD)'
 						value={data.walletSize}
 						onChange={(e) =>
 							setData({ ...data, walletSize: parseFloat(e.target.value) })
@@ -97,8 +103,87 @@ function App() {
 					/>
 					<div className='calculator__result'>
 						<h2>Result:</h2>
-						<div >Initial Margin Max Quota: {maxQuota.toFixed(2)}%</div>
-						<div>Maximum Margin: ${maxMargin.toFixed(2)}</div>
+						{data.leverage !== "" &&
+							data.walletSize !== "" &&
+							data.maxLoss !== "" &&
+							data.entryPrice !== "" &&
+							data.stopLoss !== "" && (
+								<div className='calculator__desc'>
+									<div>
+										1% Move =&nbsp;
+										<span className='calculator__highlight'>
+											${(data.entryPrice / 100).toFixed(2)}
+										</span>
+									</div>
+									<div>
+										So if entry price reaches stop loss =
+										<span className='calculator__highlight'>
+											${priceDifference.toFixed(2)} (
+											{differencePerct.toFixed(2)}
+											%)&nbsp;
+										</span>
+										of price movement
+									</div>
+									<div>
+										UPNL will be{" "}
+										<span className='calculator__highlight'>
+											{differencePerct.toFixed(2)}[%]
+										</span>{" "}
+										x&nbsp;
+										<span className='calculator__highlight'>
+											{data.leverage}
+											[x]
+										</span>{" "}
+										=
+										<span className='calculator__highlight'>
+											{(differencePerct * data.leverage).toFixed(2)}% (
+											{((differencePerct * data.leverage) / 100).toFixed(2)}x)
+										</span>
+									</div>
+									<div>
+										Initial Margin Max Quota = max loss / UPNL ={" "}
+										<span className='calculator__highlight'>
+											{data.maxLoss}
+											[%]
+										</span>{" "}
+										/{" "}
+										<span className='calculator__highlight'>
+											{((unrealizedPNL * data.leverage) / 100).toFixed(2)}
+											[x]
+										</span>{" "}
+										={" "}
+										<span className='calculator__highlight'>
+											{maxQuota.toFixed(2)}%
+										</span>
+									</div>
+									<div>
+										Max margin ={" "}
+										<span className='calculator__highlight'>
+											${data.walletSize}
+										</span>{" "}
+										x{" "}
+										<span className='calculator__highlight'>
+											{maxQuota.toFixed(2)}%
+										</span>{" "}
+										/ 100 ={" "}
+										<span className='calculator__highlight'>
+											${maxMargin.toFixed(2)}
+										</span>
+									</div>
+								</div>
+							)}
+						<div className='calculator__result-text'>
+							Initial Margin Max Quota:&nbsp;
+							<span className='calculator__result-highlight'>
+								{maxQuota.toFixed(2)}%
+							</span>
+						</div>
+						<div className='calculator__result-text'>
+							Maximum Margin:{" "}
+							<span className='calculator__result-highlight'>
+								${maxMargin.toFixed(2)}
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
