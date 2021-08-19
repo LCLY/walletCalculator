@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/walletCalculator/static/css/main.264ed809.chunk.css",
+    "main.js": "/walletCalculator/static/js/main.c33ab461.chunk.js",
+    "main.js.map": "/walletCalculator/static/js/main.c33ab461.chunk.js.map",
+    "runtime-main.js": "/walletCalculator/static/js/runtime-main.24ba1a63.js",
+    "runtime-main.js.map": "/walletCalculator/static/js/runtime-main.24ba1a63.js.map",
+    "static/css/2.47568281.chunk.css": "/walletCalculator/static/css/2.47568281.chunk.css",
+    "static/js/2.4404c4f2.chunk.js": "/walletCalculator/static/js/2.4404c4f2.chunk.js",
+    "static/js/2.4404c4f2.chunk.js.map": "/walletCalculator/static/js/2.4404c4f2.chunk.js.map",
+    "static/js/3.593a0ff2.chunk.js": "/walletCalculator/static/js/3.593a0ff2.chunk.js",
+    "static/js/3.593a0ff2.chunk.js.map": "/walletCalculator/static/js/3.593a0ff2.chunk.js.map",
+    "index.html": "/walletCalculator/index.html",
+    "static/css/2.47568281.chunk.css.map": "/walletCalculator/static/css/2.47568281.chunk.css.map",
+    "static/css/main.264ed809.chunk.css.map": "/walletCalculator/static/css/main.264ed809.chunk.css.map",
+    "static/js/2.4404c4f2.chunk.js.LICENSE.txt": "/walletCalculator/static/js/2.4404c4f2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24ba1a63.js",
+    "static/css/2.47568281.chunk.css",
+    "static/js/2.4404c4f2.chunk.js",
+    "static/css/main.264ed809.chunk.css",
+    "static/js/main.c33ab461.chunk.js"
+  ]
+}
