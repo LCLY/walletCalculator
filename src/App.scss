@@ -1,0 +1,46 @@
+@import "~antd/dist/antd.css";
+
+.App {
+	display: grid;
+	place-items: center;
+	margin-top: 3rem;
+}
+
+.ant-input-group-addon {
+	width: 8rem !important;
+	background: rgb(126, 27, 27);
+	color: white;
+}
+
+.calculator {
+	&__title {
+		text-align: center;
+	}
+
+	&__outerdiv {
+		width: 40rem;
+		padding: 1rem 2rem 2rem 2rem;
+		background: rgba(211, 179, 179, 0.589);
+	}
+
+	&__button {
+		&-div {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+
+	&__input {
+		&:not(:last-child) {
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	&__result {
+		margin-top: 1rem;
+		& h2 {
+			font-size: 15px !important;
+			border-bottom: 1px solid rgba(170, 170, 170, 0.562);
+		}
+	}
+}
