@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/walletCalculator/static/css/main.b97962e5.chunk.css",
-    "main.js": "/walletCalculator/static/js/main.f7ba1805.chunk.js",
-    "main.js.map": "/walletCalculator/static/js/main.f7ba1805.chunk.js.map",
+    "main.js": "/walletCalculator/static/js/main.103ceca4.chunk.js",
+    "main.js.map": "/walletCalculator/static/js/main.103ceca4.chunk.js.map",
     "runtime-main.js": "/walletCalculator/static/js/runtime-main.24ba1a63.js",
     "runtime-main.js.map": "/walletCalculator/static/js/runtime-main.24ba1a63.js.map",
     "static/css/2.47568281.chunk.css": "/walletCalculator/static/css/2.47568281.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.47568281.chunk.css",
     "static/js/2.a6cedefd.chunk.js",
     "static/css/main.b97962e5.chunk.css",
-    "static/js/main.f7ba1805.chunk.js"
+    "static/js/main.103ceca4.chunk.js"
   ]
 }
