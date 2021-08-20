@@ -112,11 +112,11 @@ function App() {
 									<div>
 										1% Move =&nbsp;
 										<span className='calculator__highlight'>
-											${(data.entryPrice / 100).toFixed(2)}
+											${data.entryPrice / 100}
 										</span>
 									</div>
 									<div>
-										So if entry price reaches stop loss =
+										If entry price reaches stop loss =
 										<span className='calculator__highlight'>
 											${priceDifference.toFixed(2)} (
 											{differencePerct.toFixed(2)}
@@ -168,6 +168,12 @@ function App() {
 										/ 100 ={" "}
 										<span className='calculator__highlight'>
 											${maxMargin.toFixed(2)}
+										</span>
+									</div>
+									<div>
+										If stop loss hit, you will lose{" "}
+										<span className='calculator__highlight'>
+											${((data.maxLoss * data.walletSize) / 100).toFixed(2)}
 										</span>
 									</div>
 								</div>
