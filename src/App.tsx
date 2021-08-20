@@ -74,8 +74,8 @@ function App() {
 					<Input
 						type='number'
 						className='calculator__input'
-						addonBefore='Max Loss'
-						placeholder='Maximum loss of the whole wallet you are willing to accept'
+						addonBefore='Max Wallet Loss (%)'
+						placeholder='Max % willing to lose  (whole wallet)'
 						value={data.maxLoss}
 						onChange={(e) =>
 							setData({ ...data, maxLoss: parseFloat(e.target.value) })
