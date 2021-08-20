@@ -1,6 +1,6 @@
 import "./App.scss";
 import { useState, useEffect } from "react";
-import { Input, Button } from "antd";
+import { Input } from "antd";
 
 function App() {
 	interface IData {
@@ -136,8 +136,8 @@ function App() {
 										</span>{" "}
 										=
 										<span className='calculator__highlight'>
-											{(differencePerct * data.leverage).toFixed(2)}% (
-											{((differencePerct * data.leverage) / 100).toFixed(2)}x)
+											{unrealizedPNL.toFixed(2)}% (
+											{(unrealizedPNL / 100).toFixed(2)}x)
 										</span>
 									</div>
 									<div>
@@ -148,7 +148,7 @@ function App() {
 										</span>{" "}
 										/{" "}
 										<span className='calculator__highlight'>
-											{((unrealizedPNL * data.leverage) / 100).toFixed(2)}
+											{((differencePerct * data.leverage) / 100).toFixed(2)}
 											[x]
 										</span>{" "}
 										={" "}
