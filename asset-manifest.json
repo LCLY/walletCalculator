@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/walletCalculator/static/css/main.b97962e5.chunk.css",
-    "main.js": "/walletCalculator/static/js/main.5484e252.chunk.js",
-    "main.js.map": "/walletCalculator/static/js/main.5484e252.chunk.js.map",
-    "runtime-main.js": "/walletCalculator/static/js/runtime-main.24ba1a63.js",
-    "runtime-main.js.map": "/walletCalculator/static/js/runtime-main.24ba1a63.js.map",
+    "main.js": "/walletCalculator/static/js/main.1dcdc48f.chunk.js",
+    "main.js.map": "/walletCalculator/static/js/main.1dcdc48f.chunk.js.map",
+    "runtime-main.js": "/walletCalculator/static/js/runtime-main.59564df0.js",
+    "runtime-main.js.map": "/walletCalculator/static/js/runtime-main.59564df0.js.map",
     "static/css/2.47568281.chunk.css": "/walletCalculator/static/css/2.47568281.chunk.css",
-    "static/js/2.a6cedefd.chunk.js": "/walletCalculator/static/js/2.a6cedefd.chunk.js",
-    "static/js/2.a6cedefd.chunk.js.map": "/walletCalculator/static/js/2.a6cedefd.chunk.js.map",
-    "static/js/3.593a0ff2.chunk.js": "/walletCalculator/static/js/3.593a0ff2.chunk.js",
-    "static/js/3.593a0ff2.chunk.js.map": "/walletCalculator/static/js/3.593a0ff2.chunk.js.map",
+    "static/js/2.588b86b8.chunk.js": "/walletCalculator/static/js/2.588b86b8.chunk.js",
+    "static/js/2.588b86b8.chunk.js.map": "/walletCalculator/static/js/2.588b86b8.chunk.js.map",
+    "static/js/3.6221d706.chunk.js": "/walletCalculator/static/js/3.6221d706.chunk.js",
+    "static/js/3.6221d706.chunk.js.map": "/walletCalculator/static/js/3.6221d706.chunk.js.map",
     "index.html": "/walletCalculator/index.html",
     "static/css/2.47568281.chunk.css.map": "/walletCalculator/static/css/2.47568281.chunk.css.map",
     "static/css/main.b97962e5.chunk.css.map": "/walletCalculator/static/css/main.b97962e5.chunk.css.map",
-    "static/js/2.a6cedefd.chunk.js.LICENSE.txt": "/walletCalculator/static/js/2.a6cedefd.chunk.js.LICENSE.txt"
+    "static/js/2.588b86b8.chunk.js.LICENSE.txt": "/walletCalculator/static/js/2.588b86b8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.24ba1a63.js",
+    "static/js/runtime-main.59564df0.js",
     "static/css/2.47568281.chunk.css",
-    "static/js/2.a6cedefd.chunk.js",
+    "static/js/2.588b86b8.chunk.js",
     "static/css/main.b97962e5.chunk.css",
-    "static/js/main.5484e252.chunk.js"
+    "static/js/main.1dcdc48f.chunk.js"
   ]
 }
